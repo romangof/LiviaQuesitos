@@ -1,0 +1,25 @@
+/ <h2>Hello World</h2>
+/<p>
+  The time is now: <%= Time.now %>
+/ </p>
+
+h1 Markup examples
+
+#content
+  p This example shows you how a basic Slim file looks.
+
+== yield
+
+- if items.any?
+  table#items
+    - for item in items
+      tr
+        td.name = item.name
+        td.price = item.price
+- else
+  p No items found. Please add some inventory.
+    Thank you!
+
+div id="footer"
+  == render 'footer'
+  | Copyright &copy; #{@year} #{@author}
