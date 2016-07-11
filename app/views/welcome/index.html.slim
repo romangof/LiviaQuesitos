@@ -5,7 +5,7 @@
 / </p>
 
 
-/         SLIM First try
+/ /         SLIM First try
 / h1 Markup examples
 / h2 Hello Wold
 
@@ -16,14 +16,23 @@
 
 
 
-/         SLIM with AngularJS
+/ /         SLIM with AngularJS
 
-.container-fluid ng-app="Quesitos"
-  .panel class="panel-success"
-    .panel-heading
-      h1 ng-if="name" Hello, {{name}}
+/ .container-fluid ng-app="Quesitos"
+/   .panel class="panel-success"
+/     .panel-heading
+/       h1 ng-if="name" Hello, {{name}}
 
-    .panel-body
-      form class="form-inline"
-        .form-group
-          input class="form-control" type="text" placeholder="Enter your name" ng-model="name" autofocus=""
+/     .panel-body
+/       form class="form-inline"
+/         .form-group
+/           input class="form-control" type="text" placeholder="Enter your name" ng-model="name" autofocus=""
+
+
+
+
+/ /         SLIM with AngularJS 2nd try
+
+div ng-app="Quesitos"
+  .view-container
+    ng-view class="view-frame animate-view"

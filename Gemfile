@@ -35,6 +35,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'slim'
 gem 'bower-rails'
+gem 'angular-rails-templates'
+
 
 # From http://angular-rails.com/bootstrap.html, should be in dev-test
 
